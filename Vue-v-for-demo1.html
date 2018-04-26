@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - Vue-v-for-demo1 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<ol>
+		<li v-for="site in sites">{{ site.name }}</li>
+	</ol>
+</div>
+
+<script>
+var app = new Vue({
+	'el': '#app',
+	'data': {
+		'sites':[
+			{ 'name': 'Runoob' },
+			{ 'name': 'Google' },
+			{ 'name': 'Taobao' },
+			{ 'name': 'Baidu' },
+			{ 'name': 'asm32' }
+		]
+	}
+})
+</script>
+</body>
+</html>
