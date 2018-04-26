@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - Vue-det-demo1 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="vue_det">
+	<h1>site: {{site}}</h1>
+	<h2>url: {{url}}</h2>
+	<h2>{{details()}}</h2>
+</div>
+<script>
+var vue_det = new Vue({
+	el: '#vue_det',
+	data: {
+		site: 'Vue det',
+		url: 'Vue det http://www.baidu.com/',
+		alexa: 10000
+	},
+	methods: {
+		details: function(){
+			return this.site + ' ' + this.alexa;
+		}
+	}
+});
+</script>
+</body>
+</html>
