@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - Vue-v-for-demo8 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<ul>
+		<li v-for="item in object" :key="item.id">{{item}} <!-- - {{item.text}} --></li>
+	</ul>
+</div>
+
+<script>
+new Vue({
+	'el': '#app',
+	'data':{
+		'object':{
+			2: '学的不仅是技术，更是梦想！',
+			1: '菜鸟教程',
+			0: 'http://www.runoob.com'
+		}
+	}
+})
+</script>
+</body>
+</html>
