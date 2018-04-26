@@ -8,27 +8,18 @@
 <body>
 
 <div id="app">
-	<div v-if="type === 'A'">
-		A
-	</div>
-	<div v-else-if="type === 'B'">
-		B
-	</div>
-	<div v-else-if="type === 'C'">
-		C
-	</div>
-	<div v-else>
-		Not A/B/C
-	</div>
+	<h1 v-show="ok">Hello!</h1>
 </div>
 
 <script>
+
 var app = new Vue({
 	'el': '#app',
 	'data': {
-		'type': 'C'
+		'ok': true
 	}
 })
+
 </script>
 </body>
 </html>
