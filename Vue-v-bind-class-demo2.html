@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Vue.js 样式绑定 ( Vue-v-bind-class-demo2 )</title>
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<style>
+.active{
+	width:100px;
+	height:100px;
+	background:green;
+}
+.text-danger{
+	background:red;
+}
+</style>
+<body>
+
+<div id="app">
+	<div class="static"
+	v-bind:class="{active:isActive, 'text-danger':hasError}"></div>
+</div>
+
+<script>
+var vm = new Vue({
+	'el':'#app',
+	'data':{
+		isActive:true,
+		hasError:true
+	}
+})
+</script>
+</body>
+</html>
+</body>
+</html>
